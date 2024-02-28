@@ -1,140 +1,64 @@
-/* Style sheet for Agent4 Chatbot */
-
-/* Variables for colors */
-:root {
-  --primary-color: #89FF23; /* Green */
-  --secondary-color: #383838; /* Dark gray */
-  --tertiary-color: #000000; /* Black */
+/* General styles */
+body {
+  font-family: "TRENT KNOX", sans-serif; margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
 }
 
-/* Font family and size */
-* {
-  font-family: "Longshot", sans-serif;
-  font-size: 16px;
-}
-
-/* Chatbot container */
-#agent4-chatbot {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 300px;
-  height: 400px;
-  border: 2px solid var(--primary-color);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 10px var(--primary-color);
-}
-
-/* Chatbot header */
-#agent4-chatbot-header {
+/* Header styles */
+.header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  background-color: var(--primary-color);
-  padding: 10px;
-}
-
-/* Chatbot logo */
-#agent4-chatbot-logo {
-  display: flex;
   align-items: center;
-}
+  padding: 1rem 2rem;
+  background-color: #BBFF35; }
 
-/* Chatbot logo image */
-#agent4-chatbot-logo img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
-/* Chatbot logo text */
-#agent4-chatbot-logo h4 {
-  color: var(--tertiary-color);
-  margin-left: 10px;
-}
-
-/* Chatbot close button */
-#agent4-chatbot-close {
-  color: var(--tertiary-color);
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* Chatbot messages container */
-#agent4-chatbot-messages {
-  height: 300px;
-  overflow-y: scroll;
-  padding: 10px;
-  background-color: var(--secondary-color);
-}
-
-/* Chatbot message */
-.agent4-chatbot-message {
+.nav {
   display: flex;
-  align-items: flex-end;
-  margin-bottom: 10px;
+  gap: 1rem;
 }
 
-/* Chatbot message from user */
-.agent4-chatbot-message-user {
-  flex-direction: row-reverse;
+.logo {
+  /* Style your logo here */
 }
 
-/* Chatbot message avatar */
-.agent4-chatbot-message-avatar {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+/* Main content styles */
+.main {
+  padding: 2rem;
 }
 
-/* Chatbot message text */
-.agent4-chatbot-message-text {
-  max-width: 200px;
-  padding: 10px;
-  border-radius: 10px;
-  color: var(--tertiary-color);
+.chat-container {
+  /* Style the chat conversation area here */
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1rem;
 }
 
-/* Chatbot message from assistant */
-.agent4-chatbot-message-text-assistant {
-  background-color: var(--primary-color);
-  margin-left: 10px;
-}
-
-/* Chatbot message from user */
-.agent4-chatbot-message-text-user {
-  background-color: var(--tertiary-color);
-  color: var(--primary-color);
-  margin-right: 10px;
-}
-
-/* Chatbot input container */
-#agent4-chatbot-input {
+/* Footer styles */
+.footer {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  background-color: var(--primary-color);
-  padding: 10px;
+  padding: 1rem;
+  background-color: #f0f0f0;
 }
 
-/* Chatbot input field */
-#agent4-chatbot-input-field {
-  width: 80%;
-  border: none;
-  border-radius: 10px;
-  padding: 10px;
-  outline: none;
+.input-container {
+  display: flex;
+  width: 100%;
 }
 
-/* Chatbot send button */
-#agent4-chatbot-send {
-  width: 10%;
+.chat-input {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.send-button {
+  padding: 1rem 1.5rem;
+  background-color: #BBFF35; color: #fff;
   border: none;
-  border-radius: 10px;
-  padding: 10px;
-  color: var(--tertiary-color);
-  background-color: var(--secondary-color);
+  border-radius: 5px;
   cursor: pointer;
-  outline: none;
 }
